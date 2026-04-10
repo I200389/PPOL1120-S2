@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rethink Our Drink | HKUST Student Health</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        .hkust-blue { background-color: #003366; }
+        .hkust-gold { background-color: #b3a369; }
+        .text-hkust-blue { color: #003366; }
+        
+        .card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Traffic Light Styles */
+        .light {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .light-red { background-color: #ef4444; box-shadow: 0 0 10px #ef4444; }
+        .light-amber { background-color: #f59e0b; box-shadow: 0 0 10px #f59e0b; }
+        .light-green { background-color: #10b981; box-shadow: 0 0 10px #10b981; }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header Section -->
+    <header class="hkust-blue text-white py-10 px-6 text-center shadow-lg border-b-4 border-[#b3a369]">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2 italic">RETHINK OUR DRINK</h1>
+        <p class="text-lg opacity-90">An HKUST Campus Health Policy Initiative</p>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 mt-8 space-y-6">
+        
+        <!-- Key Statistics Section -->
+        <section class="bg-white rounded-2xl shadow-sm p-6 border-l-8 border-[#003366]">
+            <h2 class="text-xl font-bold text-hkust-blue mb-4 uppercase tracking-wide">The Hidden Reality</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-4 rounded-xl text-center">
+                    <span class="text-4xl font-black text-blue-600">82%</span>
+                    <p class="text-sm font-semibold text-gray-600 mt-1">of University students consume SSBs regularly</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-xl text-center">
+                    <span class="text-4xl font-black text-red-500">12 tsp</span>
+                    <p class="text-sm font-semibold text-gray-600 mt-1">Daily recommended sugar limit</p>
+                </div>
+            </div>
+            <p class="mt-4 text-gray-700 italic text-sm">
+                "One can of lemon tea is nearly 2/3 of your daily intake."
+            </p>
+        </section>
+
+        <!-- Problem Analysis Accordion -->
+        <section class="space-y-3">
+            <details class="group bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-hkust-blue hover:bg-gray-50 transition">
+                    Why is this a problem at HKUST?
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <div class="p-5 pt-0 text-gray-600 leading-relaxed text-sm">
+                    Excessive consumption of sugar-sweetened beverages (SSBs) is a critical public health issue. Driven by hectic schedules and emotional triggers, many students rely on cheap, convenient sugary drinks. High intake is independently associated with <strong>abdominal obesity</strong>, <strong>depression</strong>, and <strong>anxiety</strong>.
+                </div>
+            </details>
+
+            <details class="group bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-hkust-blue hover:bg-gray-50 transition">
+                    Ethical Policy Approach
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <div class="p-5 pt-0 text-gray-600 leading-relaxed text-sm">
+                    Our approach follows <strong>Beneficence</strong> and <strong>Respect for Autonomy</strong>. Instead of banning choices, we advocate for "Libertarian Paternalism"—using <em>Nudging</em> to make the healthy choice the easiest and most attractive option.
+                </div>
+            </details>
+        </section>
+
+        <!-- The "Nudge" Strategies (NATO Framework) -->
+        <section class="bg-white rounded-2xl shadow-sm p-6">
+            <h2 class="text-xl font-bold text-hkust-blue mb-6">Proposed Solutions (NATO Framework)</h2>
+            
+            <div class="space-y-6">
+                <!-- Organisation -->
+                <div class="flex gap-4 items-start">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-600 font-bold">O</div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Organisation: Water Fountains</h3>
+                        <p class="text-sm text-gray-600">Upgrading fountains to provide <strong>hot, warm, room, and cold water</strong>. In summer, free cold water acts as a "nudge" to choose hydration over expensive chilled sodas.</p>
+                    </div>
+                </div>
+
+                <!-- Nodality -->
+                <div class="flex gap-4 items-start">
+                    <div class="bg-green-100 p-3 rounded-lg text-green-600 font-bold">N</div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Nodality: Traffic Light System</h3>
+                        <p class="text-sm text-gray-600">Ranking drinks based on CFS health guidelines. Research shows this shifts sales from "Red" drinks to "Green" options by informing students instantly.</p>
+                        <div class="mt-3 flex gap-2 text-xs font-bold uppercase">
+                            <span class="flex items-center bg-green-50 px-2 py-1 rounded border border-green-200"><i class="light light-green"></i> Water</span>
+                            <span class="flex items-center bg-yellow-50 px-2 py-1 rounded border border-yellow-200"><i class="light light-amber"></i> Diet Tea</span>
+                            <span class="flex items-center bg-red-50 px-2 py-1 rounded border border-red-200"><i class="light light-red"></i> Cola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Authority -->
+                <div class="flex gap-4 items-start">
+                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 font-bold">A</div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Authority: Sugar Labelling</h3>
+                        <p class="text-sm text-gray-600">Enforcing catering staff to provide sweetness levels and transparent sugar content (e.g., stating the percentage of daily sugar intake in each drink).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center py-6">
+            <p class="text-gray-500 text-sm mb-4">Support a healthier campus environment.</p>
+            <button onclick="handleSign()" class="hkust-blue hover:bg-blue-900 text-white font-bold py-4 px-8 rounded-full shadow-xl transition-all transform active:scale-95 w-full md:w-auto">
+                SIGN THE PETITION FOR CLEAR LABELLING
+            </button>
+            <div id="thankYou" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-lg font-bold">
+                Thank you for your support! 🥤✨
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-400 text-xs py-8">
+            <img src="https://logo.ust.hk/img/downloads/UST_L4.svg" alt="HKUST Logo" class="h-12 mx-auto mb-4 opacity-50 grayscale">
+            <p>© 2026 HKUST Student Health Initiative</p>
+            <p>References: Gui et al. (2017), Wang et al. (2022), Knill & Tosun (2020).</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function handleSign() {
+            // Simple interaction for demo purposes
+            document.querySelector('button').classList.add('hidden');
+            document.getElementById('thankYou').classList.remove('hidden');
+            
+            // In a real app, this would trigger a Firestore update
+            console.log("Petition signed by student.");
+        }
+    </script>
+</body>
+</html>
